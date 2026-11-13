@@ -1,0 +1,30 @@
+Source: python3-snipeit-api
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ pybuild-plugin-pyproject,
+ python3-all,
+ python3-setuptools,
+Standards-Version: 4.7.0
+Homepage: https://github.com/lfctech/snipeit-python-api
+Vcs-Git: https://github.com/Vitexus/snipeit-python-api.git
+Vcs-Browser: https://github.com/Vitexus/snipeit-python-api
+Rules-Requires-Root: no
+
+Package: python3-snipeit-api
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ python3-httpx (>= 0.27),
+ python3-pydantic (>= 2.0),
+Description: Python client for the Snipe-IT asset management API
+ Typed Python client library for the Snipe-IT REST API: assets, models,
+ categories, manufacturers, suppliers, locations, users, licenses,
+ consumables, accessories, components and more. Built on httpx and
+ pydantic.
+ .
+ Used by mcp-server-snipeit.

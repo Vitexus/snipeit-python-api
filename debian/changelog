@@ -1,0 +1,6 @@
+python3-snipeit-api (0.5.2-1) unstable; urgency=medium
+
+  * Initial Debian packaging of upstream v0.5.2 (Apache-2.0, httpx based).
+    Required by mcp-server-snipeit.
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Fri, 13 Nov 2026 14:00:00 +0100
